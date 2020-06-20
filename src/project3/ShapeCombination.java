@@ -11,13 +11,10 @@ public class ShapeCombination implements Shape {
     private static final char INTERSECTION = '&';
 
     /**
-     * Construct a shape that is the result of operation between two shapes. In
-     * particular, the operation follows the pattern: <i>shapeA shapeOperator
-     * shapeB</i>. Which one comes first matters.
-     *
-     * @param shapeA
-     * @param shapeB
-     * @param Operator
+     * Construct a shape that is the result of operation between two shapes. Which one comes first matters.
+     * @param shapeA The first shape
+     * @param shapeB The second shape
+     * @param Operator The operation between two shapes
      */
     public ShapeCombination(Shape shapeA, Shape shapeB, char Operator) {
         this.shapeA = shapeA;
@@ -33,6 +30,12 @@ public class ShapeCombination implements Shape {
     }
 
     @Override
+    /**
+     * Determine whether or not the given point is contained within this shape.
+     * @param x Coordinate X of the given point
+     * @param y Coordinate Y of the given point
+     * @return True if the given point is contained within this rectangle, false if not
+     */
     public boolean contains(int x, int y) {
         if (Operator == UNION) {
             return shapeA.contains(x, y) || shapeB.contains(x, y);
@@ -44,6 +47,9 @@ public class ShapeCombination implements Shape {
     }
 
     @Override
+    /**
+     * Determine the surrounding of the current shape
+     */
     public Shape boundingBox() {
         // the bounding boxes of two input shapes
         Rectangle boundingBoxA = (Rectangle) shapeA.boundingBox();

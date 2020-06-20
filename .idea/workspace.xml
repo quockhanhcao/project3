@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0b3a237-8d37-48cd-aba6-0468f3138aee" name="Default Changelist" comment="">
+    <list default="true" id="e0b3a237-8d37-48cd-aba6-0468f3138aee" name="Default Changelist" comment="Update Comment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Project03/project3/ColorPicker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project03/project3/ColorPicker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project3/Canvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project3/Canvas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project3/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project3/Color.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/project3/ColorPicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project3/ColorPicker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project3/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project3/Interpreter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project3/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project3/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project3/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project3/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project3/ShapeCombination.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project3/ShapeCombination.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +26,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1dJhHStARUy7XMePXd0QuqdlVGH" />
@@ -28,7 +39,10 @@
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="RunManager" selected="Application.ColorPicker">
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="ColorPicker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="project3.ColorPicker" />
       <module name="Project03" />
@@ -54,8 +68,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ColorPicker" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.ColorPicker" />
       </list>
     </recent_temporary>
   </component>
@@ -72,31 +86,43 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update Comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Comment" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="516" y="104" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1592360569757">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="516" y="104" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1592360569757" />
+    <state x="424" y="7" key="CommitChangelistDialog2" timestamp="1592671517314">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="424" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1592671517314" />
     <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1592662852346">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592662852346" />
-    <state width="1323" height="2" key="GridCell.Tab.0.bottom" timestamp="1592666030583">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1592671355813">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="2" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592666030583" />
-    <state width="1323" height="2" key="GridCell.Tab.0.center" timestamp="1592666030583">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592671355813" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1592671355813">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="2" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592666030583" />
-    <state width="1323" height="2" key="GridCell.Tab.0.left" timestamp="1592666030583">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592671355813" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1592671355813">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="2" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592666030583" />
-    <state width="1323" height="2" key="GridCell.Tab.0.right" timestamp="1592666030583">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592671355813" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1592671355813">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="2" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592666030583" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592671355813" />
     <state width="1323" height="175" key="GridCell.Tab.1.bottom" timestamp="1592378310199">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -113,23 +139,17 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="175" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1592378310199" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1592671419731">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1592671419731" />
     <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1592647631295">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1592647631295" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/project3/Canvas.java</url>
-          <line>14</line>
-          <properties class="project3.Canvas" method="&lt;init&gt;">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="425" y="187" key="run.anything.popup" timestamp="1592673446510">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1592673446510" />
   </component>
 </project>

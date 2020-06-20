@@ -4,10 +4,9 @@ public interface Shape {
 
         /**
          * Determine whether or not the given point is contained within this shape.
-         *
-         * @param x
-         * @param y
-         * @return
+         * @param x Coordinate X of the given point
+         * @param y Coordinate Y of the given point
+         * @return True if the given point is contained within this rectangle, false if not
          */
         public boolean contains(int x, int y);
 

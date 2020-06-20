@@ -9,12 +9,8 @@ public class Color {
     public static final Color BLACK = new Color(0, 0, 0);
 
     /**
-     * Construct a color object from a 6 digit hexadecimal number string of the
-     * form "#rrggbb". Here, "rr" corresponds to the red component, "gg" the
-     * green component and so on. Each takes a value in the range 00..ff and,
-     * hence, there are 256 possibilties for each component.
-     *
-     * @param hex
+     * Construct a color object from a 6 digit hexadecimal number string of the form "#rrggbb"
+     * @param hex Input string in form of "#rrggbb"
      */
     public Color(String hex) {
         if (hex.length() != 7 || hex.charAt(0) != '#') {
@@ -40,12 +36,11 @@ public class Color {
     }
 
     /**
-     * Construct a Color object explicitly from the three color components. Note
-     * that these must have values between 0 and 255.
-     *
-     * @param red
-     * @param green
-     * @param blue
+     * Construct a Color object explicitly from the three color components.
+     * Color values between 0 and 255.
+     * @param red Value of red component
+     * @param green Value of green component
+     * @param blue Value of blue component
      */
     public Color(int red, int green, int blue) {
         if (red < 0 || red > 255) {
@@ -64,8 +59,7 @@ public class Color {
 
     /**
      * Return the red component of this color.
-     *
-     * @return
+     * @return An integer data type
      */
     public int red() {
         return red;
@@ -73,8 +67,7 @@ public class Color {
 
     /**
      * Return the green component of this color.
-     *
-     * @return
+     * @return An integer data type
      */
     public int green() {
         return green;
@@ -82,18 +75,15 @@ public class Color {
 
     /**
      * Return the blue component of this color.
-     *
-     * @return
+     * @return An integer data type
      */
     public int blue() {
         return blue;
     }
 
     /**
-     * Convert this color into a six digit hexacimal string of the form
-     * "#rrggbb"
-     *
-     * @return
+     * Convert this color into a six digit hexadecimal string of the form "#rrggbb"
+     * @return A Hex RGB color code
      */
     public String toString() {
         return "#" + hexDigit(red) + hexDigit(green) + hexDigit(blue);
