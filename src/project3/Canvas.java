@@ -131,21 +131,26 @@ public class Canvas {
             }
 
             final BufferedImage img = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
-            for (int x = 0; x != width; ++x) {
-                for (int y = 0; y != height; ++y) {
-                    img.setRGB(x, y, grid[x][y].toRGB());
-                }
+                for (int x = 0; x != width; ++x) {
+                    for (int y = 0; y != height; ++y) {
+                        img.setRGB(x, y, grid[x][y].toRGB());
+                    }
             }
 
             JFrame window = new JFrame("Project 3, Canvas Viewer");
+            JButton button = new JButton("Click here!");
+            JPanel panel = new JPanel();
 
+            // Add button to JPanel
+            panel.add(button);
+            // And JPanel needs to be added to the JFrame itself!
+            window.add(panel);
             java.awt.Canvas canvas = new java.awt.Canvas() {
 
                 public void paint(Graphics g) {
                     g.drawImage(img, 10, 10, null);
                 }
             };
-
             window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             window.add(canvas);
             window.pack();

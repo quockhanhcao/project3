@@ -176,7 +176,7 @@ public class Interpreter {
     }
 
     /**
-     * Evaluate a rectangle expression. That is, four numbers separated by
+     * Evaluate a rectangle expression. Four numbers separated by
      * comma's and '[', ']'.
      *
      * @return ---- a shape constructed from the evaluated result
