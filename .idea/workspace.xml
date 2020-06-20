@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0b3a237-8d37-48cd-aba6-0468f3138aee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/project3/ColorPicker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project03/project3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project03/project3/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/project3/Canvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project3/Canvas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/project3/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project3/Interpreter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/project3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project3/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project03/project3/ColorPicker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project03/project3/ColorPicker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project3/ColorPicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project3/ColorPicker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +28,7 @@
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.ColorPicker">
     <configuration name="ColorPicker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="project3.ColorPicker" />
       <module name="Project03" />
@@ -57,8 +54,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.ColorPicker" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -84,22 +81,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592662852346" />
-    <state width="1323" height="137" key="GridCell.Tab.0.bottom" timestamp="1592664304800">
+    <state width="1323" height="2" key="GridCell.Tab.0.bottom" timestamp="1592666030583">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="137" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592664304800" />
-    <state width="1323" height="137" key="GridCell.Tab.0.center" timestamp="1592664304799">
+    <state width="1323" height="2" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592666030583" />
+    <state width="1323" height="2" key="GridCell.Tab.0.center" timestamp="1592666030583">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="137" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592664304799" />
-    <state width="1323" height="137" key="GridCell.Tab.0.left" timestamp="1592664304799">
+    <state width="1323" height="2" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592666030583" />
+    <state width="1323" height="2" key="GridCell.Tab.0.left" timestamp="1592666030583">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="137" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592664304799" />
-    <state width="1323" height="137" key="GridCell.Tab.0.right" timestamp="1592664304800">
+    <state width="1323" height="2" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592666030583" />
+    <state width="1323" height="2" key="GridCell.Tab.0.right" timestamp="1592666030583">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="137" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592664304800" />
+    <state width="1323" height="2" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592666030583" />
     <state width="1323" height="175" key="GridCell.Tab.1.bottom" timestamp="1592378310199">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
