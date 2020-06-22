@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0b3a237-8d37-48cd-aba6-0468f3138aee" name="Default Changelist" comment="Update Class">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="e0b3a237-8d37-48cd-aba6-0468f3138aee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project03/project3/Canvas$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project03/project3/Canvas$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project03/project3/Canvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project03/project3/Canvas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project03/project3/Interpreter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project03/project3/Interpreter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project03/project3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project03/project3/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/project3/Canvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project3/Canvas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/project3/ColorPicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project3/ColorPicker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/project3/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project3/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project3/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project3/Color.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project3/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project3/Interpreter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project3/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project3/ShapeCombination.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project3/ShapeDifference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project3/ShapeDifference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project3/ShapeIntersection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project3/ShapeIntersection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592801136376</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update Class">
+      <created>1592801534578</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1592801534578</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -107,15 +121,19 @@
     <option name="LAST_COMMIT_MESSAGE" value="Update Class" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="361" y="71" key="#Notifications" timestamp="1592801550026">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1592801550026" />
     <state x="580" y="118" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1592801490912">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="516" y="104" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1592360569757" />
     <state x="580" y="118" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1592801490912" />
-    <state x="424" y="7" key="CommitChangelistDialog2" timestamp="1592801521553">
+    <state x="424" y="7" key="CommitChangelistDialog2" timestamp="1592801541627">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="424" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1592801521553" />
+    <state x="424" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1592801541627" />
     <state x="147" y="65" key="DiffContextDialog" timestamp="1592795045918">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -125,26 +143,26 @@
     </state>
     <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592662852346" />
     <state x="521" y="138" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1592676675336" />
-    <state width="1493" height="243" key="GridCell.Tab.0.bottom" timestamp="1592801490945">
+    <state width="1493" height="243" key="GridCell.Tab.0.bottom" timestamp="1592829566472">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="2" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592666030583" />
-    <state width="1493" height="243" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592801490945" />
-    <state width="1493" height="243" key="GridCell.Tab.0.center" timestamp="1592801490945">
+    <state width="1493" height="243" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592829566472" />
+    <state width="1493" height="243" key="GridCell.Tab.0.center" timestamp="1592829566472">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="2" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592666030583" />
-    <state width="1493" height="243" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592801490945" />
-    <state width="1493" height="243" key="GridCell.Tab.0.left" timestamp="1592801490945">
+    <state width="1493" height="243" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592829566472" />
+    <state width="1493" height="243" key="GridCell.Tab.0.left" timestamp="1592829566472">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="2" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592666030583" />
-    <state width="1493" height="243" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592801490945" />
-    <state width="1493" height="243" key="GridCell.Tab.0.right" timestamp="1592801490945">
+    <state width="1493" height="243" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592829566472" />
+    <state width="1493" height="243" key="GridCell.Tab.0.right" timestamp="1592829566472">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="2" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592666030583" />
-    <state width="1493" height="243" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592801490945" />
+    <state width="1493" height="243" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592829566472" />
     <state width="1493" height="17" key="GridCell.Tab.1.bottom" timestamp="1592741372796">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -182,10 +200,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="487" y="204" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1592795005782" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1592673446510">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1592830017990">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1592673446510" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1592830017990" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -194,14 +212,6 @@
           <url>file://$PROJECT_DIR$/src/project3/Main.java</url>
           <line>9</line>
           <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/project3/Interpreter.java</url>
-          <line>55</line>
-          <properties class="project3.Interpreter" method="createCanvas">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

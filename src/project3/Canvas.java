@@ -17,9 +17,9 @@ public class Canvas {
      * Construct an empty Canvas.
      */
     public Canvas() {
-        grid = null;
-        width = 0;
-        height = 0;
+            grid = null;
+            width = 0;
+            height = 0;
     }
 
     /**
@@ -123,8 +123,7 @@ public class Canvas {
         String env = System.getenv("AUTOMARK");
 
         if (env != null) {
-            return; // this is to ensure the marking script will work, even if
-            // you leave in the canvas.show().
+            return;
         }
 
         final BufferedImage img = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
@@ -156,7 +155,6 @@ public class Canvas {
      */
     public String toString() {
         StringBuilder r = new StringBuilder();
-        // now write out the canvas
         for (int y = 0; y < height; ++y) {
             for (int x = 0; x < width; ++x) {
                 r.append(colorAt(x, y));

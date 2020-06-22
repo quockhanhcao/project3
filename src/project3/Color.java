@@ -19,7 +19,6 @@ public class Color {
         if (hex.length() != 7 || hex.charAt(0) != '#') {
             throw new IllegalArgumentException("hex string requires # followed by 6 hex digits");
         } else {
-            // Now, check all digits are indeed hex digits.
             for (int i = 1; i != hex.length(); ++i) {
                 char digit = hex.charAt(i);
                 if (!Character.isDigit(digit) && digit != 'a' && digit != 'b' && digit != 'c' && digit != 'd'
@@ -85,27 +84,10 @@ public class Color {
     }
 
     /**
-     * Convert this color into a six digit hexadecimal string of the form "#rrggbb"
-     * @return A Hex RGB color code
-     */
-
-    /**
      * Change to RGB color code
      * @return A RGB color code
      */
     public int toRGB() {
         return ((red & 0xFF) << 16) | ((green & 0xFF) << 8) | (blue & 0xFF);
     }
-
-//    public String toString() {
-//        return "#" + hexDigit(red) + hexDigit(green) + hexDigit(blue);
-//    }
-//
-//    private static String hexDigit(int c) {
-//        String r = Integer.toHexString(c);
-//        if (r.length() < 2) {
-//            r = "0" + r;
-//        }
-//        return r;
-//    }
 }

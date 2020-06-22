@@ -42,7 +42,6 @@ public class ShapeDifference implements Shape {
      */
     public Shape boundingBox() {
         Rectangle boundingBoxA = (Rectangle) shapeA.boundingBox();
-        Rectangle boundingBoxB = (Rectangle) shapeB.boundingBox();
         return boundingBoxA;
     }
 }

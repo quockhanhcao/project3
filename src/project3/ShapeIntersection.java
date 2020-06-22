@@ -50,14 +50,12 @@ public class ShapeIntersection implements Shape {
         int upMostB = boundingBoxB.getY();
         int downMostB = upMostB + boundingBoxB.getHeight();
 
-        // left-most, right-most, up-most, and down-most boundary of both
-        int leftMost = Math.min(leftMostA, leftMostB);
-        int rightMost = Math.max(rightMostA, rightMostB);
-        int upMost = Math.min(upMostA, upMostB);
-        int downMost = Math.max(downMostA, downMostB);
         if (rightMostA < leftMostB || leftMostA > rightMostB || downMostA < upMostB || upMostA > downMostB) {
+            System.out.println("\n\n2 shape [" + leftMostA + "," + upMostA + "," + boundingBoxA.getWidth() + "," + boundingBoxA.getHeight() + "] and [" +
+                    leftMostB + "," + upMostB + "," + boundingBoxB.getWidth() + "," + boundingBoxB.getHeight() + "] have no intersection\n\n");
             return null;
         }
+        // left-most, right-most, up-most, and down-most boundary of intersection
         int leftIntersection = Math.max(leftMostA, leftMostB);
         int rightIntersection = Math.min(rightMostA, rightMostB);
         int upIntersection = Math.max(upMostA, upMostB);
