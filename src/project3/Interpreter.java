@@ -158,17 +158,43 @@ public class Interpreter {
 
         if (index < input.length()) {
             character = input.charAt(index);
+//            if (character == '+' || character == '-' || character == '&') {
+//                // in this case we have a shape operation
+////                char so = readOperator(character);
+//                char so = character;
+//                index++;
+//                Shape valueCopy = value; // just a copy of value
+//                Shape another = checkBracketExpression(); // another shape after
+//                // the shape operator
+//                value = new ShapeCombination(valueCopy, another, so);
+//            }
 
-            if (character == '+' || character == '-' || character == '&') {
-                // in this case we have a shape operation
-                char so = readOperator(character);
-                Shape valueCopy = value; // just a copy of value
-                Shape another = checkBracketExpression(); // another shape after
-                // the shape operator
-                value = new ShapeCombination(valueCopy, another, so);
+            if (character == '+') {
+//                char so = readOperator(character);
+                char so = character;
+                index++;
+                Shape valueCopy = value;
+                Shape another = checkBracketExpression();
+                value = new ShapeUnion(valueCopy, another, so);
             }
+            else if (character == '-') {
+//                char so = readOperator(character);
+                char so = character;
+                index++;
+                Shape valueCopy = value;
+                Shape another = checkBracketExpression();
+                value = new ShapeDifference(valueCopy, another, so);
+            }
+            else if (character == '&') {
+//                char so = readOperator(character);
+                char so = character;
+                index++;
+                Shape valueCopy = value;
+                Shape another = checkBracketExpression();
+                value = new ShapeIntersection(valueCopy, another, so);
+            }
+            //else error("Invalid operator\nAvailable operator\nUnion: +\t Difference -\t Intersection & ");
         }
-
         return value;
     }
 
@@ -230,21 +256,21 @@ public class Interpreter {
         return s;
     }
 
-    /**
-     * Read a shape operator at the current input position.
-     * '+' for union
-     * '-' for difference
-     * '&' for intersection
-     * @param chr the character that need to be parsed
-     * @return The passed argument
-     */
-    private char readOperator(char chr) {
+//    /**
+//     * Read a shape operator at the current input position.
+//     * '+' for union
+//     * '-' for difference
+//     * '&' for intersection
+//     * @param chr the character that need to be parsed
+//     * @return The passed argument
+//     */
+//    private char readOperator(char chr) {
 //        if (chr != '+' && chr != '-' && chr != '&') {
 //            error("Invalid operator\nAvailable operator\nUnion: +\t Difference -\t Intersection & ");
 //        }
-        index++;
-        return chr;
-    }
+//        index++;
+//        return chr;
+//    }
 
     /**
      * Read a color at the current input position. A color is a string of Hex color code
@@ -333,7 +359,8 @@ public class Interpreter {
                 if (!wasInside && isInside) {
                     // enter the shape
                     canvas.draw(x, y, color);
-                } else if (wasInside && !isInside) {
+                }
+                else if (wasInside && !isInside) {
                     // exit the shape
                     canvas.draw(x - 1, y, color);
                 }

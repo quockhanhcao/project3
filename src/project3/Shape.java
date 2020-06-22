@@ -1,5 +1,8 @@
 package project3;
 
+/**
+ * Create arbitrary shape
+ */
 public interface Shape {
 
         /**

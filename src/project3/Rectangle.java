@@ -1,5 +1,8 @@
 package project3;
 
+/**
+ * Create rectangle with its parameter
+ */
 public class Rectangle implements Shape {
 
     private final int x;

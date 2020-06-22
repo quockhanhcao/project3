@@ -1,5 +1,8 @@
 package project3;
 
+/**
+ * This class covert the hex string to color
+ */
 public class Color {
     private int red;
     private int green;
@@ -85,19 +88,24 @@ public class Color {
      * Convert this color into a six digit hexadecimal string of the form "#rrggbb"
      * @return A Hex RGB color code
      */
-    public String toString() {
-        return "#" + hexDigit(red) + hexDigit(green) + hexDigit(blue);
-    }
 
+    /**
+     * Change to RGB color code
+     * @return A RGB color code
+     */
     public int toRGB() {
         return ((red & 0xFF) << 16) | ((green & 0xFF) << 8) | (blue & 0xFF);
     }
 
-    private static String hexDigit(int c) {
-        String r = Integer.toHexString(c);
-        if (r.length() < 2) {
-            r = "0" + r;
-        }
-        return r;
-    }
+//    public String toString() {
+//        return "#" + hexDigit(red) + hexDigit(green) + hexDigit(blue);
+//    }
+//
+//    private static String hexDigit(int c) {
+//        String r = Integer.toHexString(c);
+//        if (r.length() < 2) {
+//            r = "0" + r;
+//        }
+//        return r;
+//    }
 }
