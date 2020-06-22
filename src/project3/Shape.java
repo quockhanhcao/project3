@@ -7,7 +7,6 @@ public interface Shape {
          *
          * @param x
          * @param y
-         * @return
          */
         public boolean contains(int x, int y);
 

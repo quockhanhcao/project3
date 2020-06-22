@@ -138,13 +138,7 @@ public class Canvas {
             }
 
             JFrame window = new JFrame("Project 3, Canvas Viewer");
-            JButton button = new JButton("Click here!");
-            JPanel panel = new JPanel();
-
-            // Add button to JPanel
-            panel.add(button);
             // And JPanel needs to be added to the JFrame itself!
-            window.add(panel);
             java.awt.Canvas canvas = new java.awt.Canvas() {
 
                 public void paint(Graphics g) {

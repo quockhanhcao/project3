@@ -95,19 +95,19 @@ public class Color {
      *
      * @return
      */
-    public String toString() {
-        return "#" + hexDigit(red) + hexDigit(green) + hexDigit(blue);
-    }
+//    public String toString() {
+//        return "#" + hexDigit(red) + hexDigit(green) + hexDigit(blue);
+//    }
 
     public int toRGB() {
         return ((red & 0xFF) << 16) | ((green & 0xFF) << 8) | (blue & 0xFF);
     }
 
-    private static String hexDigit(int c) {
-        String r = Integer.toHexString(c);
-        if (r.length() < 2) {
-            r = "0" + r;
-        }
-        return r;
-    }
+//    private static String hexDigit(int c) {
+//        String r = Integer.toHexString(c);
+//        if (r.length() < 2) {
+//            r = "0" + r;
+//        }
+//        return r;
+//    }
 }

@@ -145,15 +145,33 @@ public class Interpreter {
         if (index < input.length()) {
             character = input.charAt(index);
 
-            if (character == '+' || character == '-' || character == '&') {
-                // in this case we have a shape operation
+//            if (character == '+' || character == '-' || character == '&') {
+//                // in this case we have a shape operation
+//                char so = readOperator(character);
+//                Shape valueCopy = value; // just a copy of value
+//                Shape another = checkBracketExpression(); // another shape after
+//                // the shape operator
+//                value = new ShapeCombination(valueCopy, another, so);
+//            }
+            if (character == '+') {
                 char so = readOperator(character);
-                Shape valueCopy = value; // just a copy of value
-                Shape another = checkBracketExpression(); // another shape after
-                // the shape operator
-                value = new ShapeCombination(valueCopy, another, so);
+                Shape valueCopy = value;
+                Shape another = checkBracketExpression();
+                value = new ShapeUnion(valueCopy, another, so);
             }
-        }
+            }
+            else if (character == '-') {
+            char so = readOperator(character);
+            Shape valueCopy = value;
+            Shape another = checkBracketExpression();
+            value = new ShapeDifference(valueCopy, another, so);
+            }
+            else if (character == '&') {
+            char so = readOperator(character);
+            Shape valueCopy = value;
+            Shape another = checkBracketExpression();
+            value = new ShapeUnion(valueCopy, another, so);
+            }
 
         return value;
     }
