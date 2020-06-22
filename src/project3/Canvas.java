@@ -55,6 +55,8 @@ public class Canvas {
 
     /**
      * Return the color at the given (x, y) coordinate. Check if that coordinate is in the canvas or not
+     * @param x Coordinate X of the pixel
+     * @param y Coordinate Y of the pixel
      * @return Color at grid (x, y)
      */
     public Color colorAt(int x, int y) {

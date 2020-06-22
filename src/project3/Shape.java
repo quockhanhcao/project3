@@ -19,7 +19,7 @@ public interface Shape {
          *      * determine the maximum width and height of the shape. This is useful when
          *      * it comes to drawing the shape!
          *      *
-         * @return
+         * @return A shape data type
          */
         public Shape boundingBox();
 

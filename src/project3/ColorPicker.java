@@ -9,7 +9,7 @@ import javax.swing.*;
      */
 
     /**
-     *
+     * This class help user to choose the Hex color code for writing input string
      * @author quock
      */
     public class ColorPicker extends javax.swing.JFrame {
