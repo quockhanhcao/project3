@@ -1,13 +1,15 @@
 package project3;
 
+/**
+ * Create arbitrary shape
+ */
 public interface Shape {
 
         /**
          * Determine whether or not the given point is contained within this shape.
-         *
-         * @param x
-         * @param y
-         * @return
+         * @param x Coordinate X of the given point
+         * @param y Coordinate Y of the given point
+         * @return True if the given point is contained within this rectangle, false if not
          */
         public boolean contains(int x, int y);
 
@@ -17,7 +19,7 @@ public interface Shape {
          *      * determine the maximum width and height of the shape. This is useful when
          *      * it comes to drawing the shape!
          *      *
-         * @return
+         * @return A shape data type
          */
         public Shape boundingBox();
 
