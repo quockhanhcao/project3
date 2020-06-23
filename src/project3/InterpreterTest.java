@@ -4,6 +4,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * JUnit Test
+ */
 class InterpreterTest {
     /**
      * Input for test fill shapes
