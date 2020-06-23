@@ -90,4 +90,16 @@ public class Color {
     public int toRGB() {
         return ((red & 0xFF) << 16) | ((green & 0xFF) << 8) | (blue & 0xFF);
     }
+
+    public String toString() {
+        return "#" + hexDigit(red) + hexDigit(green) + hexDigit(blue);
+    }
+
+    private static String hexDigit(int c) {
+        String r = Integer.toHexString(c);
+        if (r.length() < 2) {
+            r = "0" + r;
+        }
+        return r;
+    }
 }

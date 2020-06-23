@@ -5,21 +5,27 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class InterpreterTest {
+    /**
+     * Input for test fill shapes
+     */
     @Test
     public void validFillTests() {
         String[][] inputs = {
-                {"x = [2,2,4,4]\nfill x #0000ff\n"},
-                {"xyz= [2,2,4,4]\nfill xyz #010203\n"},
-                {"x =[2,2,4,4]\nfill x #0000ff\n"},
-                {"fill [2,2,4,4] #0000ff\n"},
-                {"x1=[2,2,4,4]\nfill x1 #0000ff\n"},
-                {"x=[2 ,2,4,4]\nfill x #0000ff\n"},
-                {"x=[2, 2,4,4]\nfill x #0000ff\n"},
-                {"x=[2, 2, 4, 4]\nfill x #0000ff\n"}
+                {"x = [2,2,4,4]\nfill x #0000ff\n","#ffffff#ffffff#ffffff#ffffff#ffffff#ffffff\n#ffffff#ffffff#ffffff#ffffff#ffffff#ffffff\n#ffffff#ffffff#0000ff#0000ff#0000ff#0000ff\n#ffffff#ffffff#0000ff#0000ff#0000ff#0000ff\n#ffffff#ffffff#0000ff#0000ff#0000ff#0000ff\n#ffffff#ffffff#0000ff#0000ff#0000ff#0000ff\n"},
+                {"xyz= [2,2,4,4]\nfill xyz #010203\n","#ffffff#ffffff#ffffff#ffffff#ffffff#ffffff\n#ffffff#ffffff#ffffff#ffffff#ffffff#ffffff\n#ffffff#ffffff#010203#010203#010203#010203\n#ffffff#ffffff#010203#010203#010203#010203\n#ffffff#ffffff#010203#010203#010203#010203\n#ffffff#ffffff#010203#010203#010203#010203\n"},
+                {"x =[2,2,4,4]\nfill x #0000ff\n","#ffffff#ffffff#ffffff#ffffff#ffffff#ffffff\n#ffffff#ffffff#ffffff#ffffff#ffffff#ffffff\n#ffffff#ffffff#0000ff#0000ff#0000ff#0000ff\n#ffffff#ffffff#0000ff#0000ff#0000ff#0000ff\n#ffffff#ffffff#0000ff#0000ff#0000ff#0000ff\n#ffffff#ffffff#0000ff#0000ff#0000ff#0000ff\n"},
+                {"fill [2,2,4,4] #0000ff\n","#ffffff#ffffff#ffffff#ffffff#ffffff#ffffff\n#ffffff#ffffff#ffffff#ffffff#ffffff#ffffff\n#ffffff#ffffff#0000ff#0000ff#0000ff#0000ff\n#ffffff#ffffff#0000ff#0000ff#0000ff#0000ff\n#ffffff#ffffff#0000ff#0000ff#0000ff#0000ff\n#ffffff#ffffff#0000ff#0000ff#0000ff#0000ff\n"},
+                {"x1=[2,2,4,4]\nfill x1 #0000ff\n","#ffffff#ffffff#ffffff#ffffff#ffffff#ffffff\n#ffffff#ffffff#ffffff#ffffff#ffffff#ffffff\n#ffffff#ffffff#0000ff#0000ff#0000ff#0000ff\n#ffffff#ffffff#0000ff#0000ff#0000ff#0000ff\n#ffffff#ffffff#0000ff#0000ff#0000ff#0000ff\n#ffffff#ffffff#0000ff#0000ff#0000ff#0000ff\n"},
+                {"x=[2 ,2,4,4]\nfill x #0000ff\n","#ffffff#ffffff#ffffff#ffffff#ffffff#ffffff\n#ffffff#ffffff#ffffff#ffffff#ffffff#ffffff\n#ffffff#ffffff#0000ff#0000ff#0000ff#0000ff\n#ffffff#ffffff#0000ff#0000ff#0000ff#0000ff\n#ffffff#ffffff#0000ff#0000ff#0000ff#0000ff\n#ffffff#ffffff#0000ff#0000ff#0000ff#0000ff\n"},
+                {"x=[2, 2,4,4]\nfill x #0000ff\n","#ffffff#ffffff#ffffff#ffffff#ffffff#ffffff\n#ffffff#ffffff#ffffff#ffffff#ffffff#ffffff\n#ffffff#ffffff#0000ff#0000ff#0000ff#0000ff\n#ffffff#ffffff#0000ff#0000ff#0000ff#0000ff\n#ffffff#ffffff#0000ff#0000ff#0000ff#0000ff\n#ffffff#ffffff#0000ff#0000ff#0000ff#0000ff\n"},
+                {"x=[2, 2, 4, 4]\nfill x #0000ff\n","#ffffff#ffffff#ffffff#ffffff#ffffff#ffffff\n#ffffff#ffffff#ffffff#ffffff#ffffff#ffffff\n#ffffff#ffffff#0000ff#0000ff#0000ff#0000ff\n#ffffff#ffffff#0000ff#0000ff#0000ff#0000ff\n#ffffff#ffffff#0000ff#0000ff#0000ff#0000ff\n#ffffff#ffffff#0000ff#0000ff#0000ff#0000ff\n"}
         };
         testValidInputs(inputs);
     }
 
+    /**
+     * Input for test draw shapes
+     */
     @Test
     public void validDrawTests() {
         String[][] inputs = {
@@ -32,6 +38,9 @@ class InterpreterTest {
         testValidInputs(inputs);
     }
 
+    /**
+     * Input for test shapes union
+     */
     @Test
     public void validUnionTests() {
         String[][] inputs = {
@@ -59,6 +68,9 @@ class InterpreterTest {
         testValidInputs(inputs);
     }
 
+    /**
+     * Input for test shapes intersection
+     */
     @Test
     public void validIntersectionTests() {
         String[][] inputs = {
@@ -73,6 +85,9 @@ class InterpreterTest {
         testValidInputs(inputs);
     }
 
+    /**
+     * Input for test shapes difference
+     */
     @Test
     public void validDifferenceTests() {
         String[][] inputs = {
@@ -87,37 +102,32 @@ class InterpreterTest {
         testValidInputs(inputs);
     }
 
+    /**
+     * Input for test syntax
+     */
     @Test
     public void invalidSyntaxTests() {
-        // This test makes sure that the interpreter throws an appropriate error message
         String[] inputs = {
                 // invalid syntax
                 "x    = [2,2,4,4]\nfill y #0000ff\n",
                 "x =    [2,2,4,4]\nfill x #x000ff\n",
                 "x = [2,   2,4,4]\nfill x #000hff\n",
-                "x = [2,2,   4,4\nfill x #0000ff\n",
-                "x = [2,  2,4,   4,2]\nfill x #0000ff\n",
                 "x = [2.012  ,2,4,   4   ]\nfill x #0000ff\n",
                 "x= [-4,4,2,2]\nfill x #010203\n",
                 "x  =  [4,-4,2,2]\nfill x #010203\n",
                 "    x= [4  ,4,-2,2]\n   fill x #010203\n",
                 "x= [4,4,2,-2]\nfill x #010203\n",
-                "x= [4,4,2,2]\nfill x\n",
-                "x= [4,4,2,2]\ndraw z\n",
-                "x = [2,0,5,5]\ny = [0,2,4,5]\ny =  y-z\nfill y #ff0000\n",
                 "x = [2,0,5,5]\ny = [0,2,4,5]\ny =  [y-x]\nfill y #ff0000\n",
-                "x = [2,0,5,5]\ny = [0,2,4,5]\ny =  (y-x\nfill y #ff0000\n",
                 "x = [2,0,5]\nfill x #ff0000\n",
                 "1x = [2,0,5]\nfill x #ff0000\n",
-                "(x-y) = [2, 2,0,5]\nfill x #ff0000\n",
                 "x-y = [2,2,0,5]\nfill x #ff0000\n",
-                "x += [2,0,5,5]\nfill x #ff0000\n",
         };
 
         for(int i=0;i!=inputs.length;++i) {
             String input = inputs[i];
             try {
                 Canvas canvas = new Interpreter(input).createCanvas();
+
                 fail("Input " + i  + " should have given an error!");
             } catch(IllegalArgumentException e) {
                 // ok, this seems alright!
@@ -127,6 +137,10 @@ class InterpreterTest {
         }
     }
 
+    /**
+     * Run test
+     * @param inputs Input string
+     */
     private void testValidInputs(String[][] inputs) {
         for(int i=0;i!=inputs.length;++i) {
             String[] input = inputs[i];

@@ -3,37 +3,7 @@ package project3;
 import java.util.*;
 
 /**
- * Responsible for interpreting a shape program. The program is represented as a
- * string, through which the interpreter moves. For example, consider this shape
- * program:
- *
- * <pre>
- * x =[0,0,10,10]
- * fill x #000000
- * </pre>
- *
- * This program will be represented in the input string as follows:
- *
- * <pre>
- * --------------------------------------------------------------
- * | x |   | = | [ | 0 | , | 0 | , | 1 | 0 | , | 1 | 0 | ] | \n |
- * --------------------------------------------------------------
- *   0   1   2   3   4   5   6   7   8   9   10  11  12  13  14
- *
- * (continued)
- * --------------------------------------------------------------
- * | f | i | l | l |   | x |   | # | 0 | 0 | 0 | 0 | 0 | 0 | \n |
- * --------------------------------------------------------------
- *   14  15  16  17  18  19  20  21  22  23  24  25  26  27  38
- * </pre>
- *
- * The interpreter starts at index 0 and attempts to decide what kind of command
- * we have. If the first four characters are "fill" then it's a fill command. If
- * the first four characters are "draw" then it's a draw command. Otherwise, it
- * must be an assignment command.
- *
- *
- *
+ * This class create a canvas and handle the input string into each command to draw shapes.
  */
 public class Interpreter {
     private String input;

@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0b3a237-8d37-48cd-aba6-0468f3138aee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/project3/InterpreterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project03.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Project03.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project03/project3/Canvas$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project03/project3/Canvas$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project03/project3/Canvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project03/project3/Canvas.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Project03/project3/Color.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project03/project3/Color.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Project03/project3/Interpreter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project03/project3/Interpreter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project3/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project3/Color.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project3/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project3/Interpreter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project3/InterpreterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project3/InterpreterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +60,23 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Android JUnit.InterpreterTest.validFillTests">
+  <component name="RunManager" selected="Android JUnit.InterpreterTest">
+    <configuration name="InterpreterTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="project3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="project3" />
+      <option name="MAIN_CLASS_NAME" value="project3.InterpreterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="InterpreterTest.validFillTests" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project03" />
       <extension name="coverage">
@@ -76,29 +90,6 @@
       <option name="METHOD_NAME" value="validFillTests" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ColorPicker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="project3.ColorPicker" />
-      <module name="Project03" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="project3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="project3.Main" />
-      <module name="Project03" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -118,12 +109,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="InterpreterTest.invalidSyntaxTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="project3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="project3" />
+      <option name="MAIN_CLASS_NAME" value="project3.InterpreterTest" />
+      <option name="METHOD_NAME" value="invalidSyntaxTests" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InterpreterTest.validDrawTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="project3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="project3" />
+      <option name="MAIN_CLASS_NAME" value="project3.InterpreterTest" />
+      <option name="METHOD_NAME" value="validDrawTests" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Android JUnit.InterpreterTest.validFillTests" />
+        <item itemvalue="Android JUnit.InterpreterTest" />
+        <item itemvalue="JUnit.InterpreterTest.invalidSyntaxTests" />
+        <item itemvalue="JUnit.InterpreterTest.validDrawTests" />
         <item itemvalue="JUnit.InterpreterTest" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.ColorPicker" />
+        <item itemvalue="Android JUnit.InterpreterTest.validFillTests" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592840994170</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Update project">
+      <created>1592906209827</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1592906209828</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -185,10 +216,10 @@
     </state>
     <state x="516" y="104" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1592360569757" />
     <state x="580" y="118" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1592801490912" />
-    <state x="424" y="7" key="CommitChangelistDialog2" timestamp="1592840992791">
+    <state x="424" y="7" key="CommitChangelistDialog2" timestamp="1592906208057">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="424" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1592840992791" />
+    <state x="424" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1592906208057" />
     <state x="147" y="65" key="DiffContextDialog" timestamp="1592795045918">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -198,54 +229,54 @@
     </state>
     <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592662852346" />
     <state x="521" y="138" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1592676675336" />
-    <state width="1493" height="235" key="GridCell.Tab.0.bottom" timestamp="1592906085176">
+    <state width="1493" height="189" key="GridCell.Tab.0.bottom" timestamp="1592910873925">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="2" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592666030583" />
-    <state width="1493" height="235" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592906085176" />
-    <state width="1493" height="235" key="GridCell.Tab.0.center" timestamp="1592906085176">
+    <state width="1493" height="189" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592910873925" />
+    <state width="1493" height="189" key="GridCell.Tab.0.center" timestamp="1592910873924">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="2" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592666030583" />
-    <state width="1493" height="235" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592906085176" />
-    <state width="1493" height="235" key="GridCell.Tab.0.left" timestamp="1592906085176">
+    <state width="1493" height="189" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592910873924" />
+    <state width="1493" height="189" key="GridCell.Tab.0.left" timestamp="1592910873924">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="2" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592666030583" />
-    <state width="1493" height="235" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592906085176" />
-    <state width="1493" height="235" key="GridCell.Tab.0.right" timestamp="1592906085176">
+    <state width="1493" height="189" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592910873924" />
+    <state width="1493" height="189" key="GridCell.Tab.0.right" timestamp="1592910873925">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="2" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592666030583" />
-    <state width="1493" height="235" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592906085176" />
-    <state width="1493" height="17" key="GridCell.Tab.1.bottom" timestamp="1592741372796">
+    <state width="1493" height="189" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592910873925" />
+    <state width="1493" height="227" key="GridCell.Tab.1.bottom" timestamp="1592909797846">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="175" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592378310199" />
-    <state width="1493" height="17" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592741372796" />
-    <state width="1493" height="17" key="GridCell.Tab.1.center" timestamp="1592741372796">
+    <state width="1493" height="227" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592909797846" />
+    <state width="1493" height="227" key="GridCell.Tab.1.center" timestamp="1592909797846">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="175" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1592378310199" />
-    <state width="1493" height="17" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1592741372796" />
-    <state width="1493" height="17" key="GridCell.Tab.1.left" timestamp="1592741372796">
+    <state width="1493" height="227" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1592909797846" />
+    <state width="1493" height="227" key="GridCell.Tab.1.left" timestamp="1592909797846">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="175" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1592378310199" />
-    <state width="1493" height="17" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1592741372796" />
-    <state width="1493" height="17" key="GridCell.Tab.1.right" timestamp="1592741372796">
+    <state width="1493" height="227" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1592909797846" />
+    <state width="1493" height="227" key="GridCell.Tab.1.right" timestamp="1592909797846">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="175" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1592378310199" />
-    <state width="1493" height="17" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1592741372796" />
+    <state width="1493" height="227" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1592909797846" />
     <state x="277" y="0" key="SettingsEditor" timestamp="1592801203233">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1592801203233" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1592840999533">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1592906217346">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1592840999533" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1592906217346" />
     <state x="440" y="216" key="com.intellij.ide.util.TipDialog" timestamp="1592904640758">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
