@@ -30,6 +30,32 @@ public class Interpreter {
         }
         return newCanvas;
     }
+    
+    /**
+     * Method to skip over any space or end line at the current position of the input
+     */
+    private void skipWhiteSpace() {
+        while (index < input.length() && (input.charAt(index) == ' ' || input.charAt(index) == '\n')) {
+            index = index + 1;
+        }
+    }
+    
+    /**
+     * Read a word from input. It can be a variable name or command If the word is a variable name, it must starts with a letter
+     * @return A substring which contains a command or a variable name
+     */
+    private String readWord() {
+        int start = index;
+        if (!Character.isLetter(input.charAt(start))) {
+            error("Variable name or command must start with letter");
+        }
+
+        while (index < input.length() && (Character.isLetter(input.charAt(index)) || Character.isDigit(input.charAt(index)))) {
+            index++;
+        }
+
+        return input.substring(start, index);
+    }
 
     /**
      * This method uses method readword() to check the word is a command or variable.
@@ -56,32 +82,6 @@ public class Interpreter {
             environment.put(command, shape);
         }
         skipWhiteSpace();
-    }
-
-    /**
-     * Method to skip over any space or end line at the current position of the input
-     */
-    private void skipWhiteSpace() {
-        while (index < input.length() && (input.charAt(index) == ' ' || input.charAt(index) == '\n')) {
-            index = index + 1;
-        }
-    }
-
-    /**
-     * Read a word from input. It can be a variable name or command If the word is a variable name, it must starts with a letter
-     * @return A substring which contains a command or a variable name
-     */
-    private String readWord() {
-        int start = index;
-        if (!Character.isLetter(input.charAt(start))) {
-            error("Variable name or command must start with letter");
-        }
-
-        while (index < input.length() && (Character.isLetter(input.charAt(index)) || Character.isDigit(input.charAt(index)))) {
-            index++;
-        }
-
-        return input.substring(start, index);
     }
 
     /**
