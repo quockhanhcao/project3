@@ -41,18 +41,18 @@ public class Interpreter {
         skipWhiteSpace();
         String command = readWord();
         if (command.equals("fill")) {
-            Shape shape = checkBracketExpression();
+            Shape shape = checkBracket();
             Color color = readColor();
             fillShape(color, shape, canvas);
         }
         else if (command.equals("draw")) {
-            Shape shape = checkBracketExpression();
+            Shape shape = checkBracket();
             Color color = readColor();
             drawShape(color, shape, canvas);
         }
         else if (!command.equals("")) {
             match("=");
-            Shape shape = checkBracketExpression();
+            Shape shape = checkBracket();
             environment.put(command, shape);
         }
         skipWhiteSpace();
@@ -105,7 +105,7 @@ public class Interpreter {
      * If the first character of the input string is a '[', then we read the rectangle.
      * @return A shape constructed from the evaluated result
      */
-    private Shape checkBracketExpression() {
+    private Shape checkBracket() {
         skipWhiteSpace();
         char character = input.charAt(index);
         Shape value = null;
@@ -133,21 +133,21 @@ public class Interpreter {
                 char so = character;//Shape Operator
                 index++;
                 Shape valueCopy = value;
-                Shape another = checkBracketExpression();
+                Shape another = checkBracket();
                 value = new ShapeUnion(valueCopy, another, so);
             }
             else if (character == '-') {
                 char so = character;
                 index++;
                 Shape valueCopy = value;
-                Shape another = checkBracketExpression();
+                Shape another = checkBracket();
                 value = new ShapeDifference(valueCopy, another, so);
             }
             else if (character == '&') {
                 char so = character;
                 index++;
                 Shape valueCopy = value;
-                Shape another = checkBracketExpression();
+                Shape another = checkBracket();
                 value = new ShapeIntersection(valueCopy, another, so);
             }
         }
@@ -160,7 +160,7 @@ public class Interpreter {
      */
     private Shape checkParenthesis() {
         match("(");
-        Shape value = checkBracketExpression();
+        Shape value = checkBracket();
         match(")");
         return value;
     }
@@ -272,8 +272,8 @@ public class Interpreter {
         int up = boundingBox.getY();
         int down = up + boundingBox.getHeight();
 
-        boolean wasInside;
-        boolean isInside;
+        boolean firstPoint;
+        boolean secondPoint;
 
         for (int y = up; y < down; y++) {
             int x = left;
@@ -281,12 +281,12 @@ public class Interpreter {
                 canvas.draw(x, y, color);
             }
             for (x = left + 1; x < right; x++) {
-                wasInside = shape.contains(x - 1, y);
-                isInside = shape.contains(x, y);
-                if (!wasInside && isInside) {
+                firstPoint = shape.contains(x - 1, y);
+                secondPoint = shape.contains(x, y);
+                if (!firstPoint && secondPoint) {
                     canvas.draw(x, y, color);
                 }
-                else if (wasInside && !isInside) {
+                else if (firstPoint && !secondPoint) {
                     canvas.draw(x - 1, y, color);
                 }
             }
@@ -302,11 +302,11 @@ public class Interpreter {
                 canvas.draw(x, y, color);
             }
             for (y = up + 1; y < down; y++) {
-                wasInside = shape.contains(x, y - 1);
+                firstPoint = shape.contains(x, y - 1);
                 isInside = shape.contains(x, y);
-                if (!wasInside && isInside) {
+                if (!firstPoint && secondPoint) {
                     canvas.draw(x, y, color);
-                } else if (wasInside && !isInside) {
+                } else if (firstPoint && !secondPoint) {
                     canvas.draw(x, y - 1, color);
                 }
             }
